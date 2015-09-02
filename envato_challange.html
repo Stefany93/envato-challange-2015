@@ -1,0 +1,143 @@
+<!-- this is the markup. you can change the details (your own name, your own avatar etc.) but don’t change the basic structure! -->
+
+<style type="text/css">
+
+  *{margin:0;padding:0;}
+  body{
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    background: #EE1289;
+  }
+/* Style the header */
+  h1, h2{
+    text-align: center;
+    color:#e5e5e5;
+    font-family: 'Georgia', serif;
+    border-bottom: 5px dotted #787878;
+    padding: 3%;
+  }
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 80%;
+  }
+/* End of styling the headers */
+  aside{
+    width:50%;
+    margin:auto;
+  }
+  li{
+    list-style-type: none;
+  }
+ /* The main image */
+ header a img{
+    width:200px;
+    display: block;
+    margin: auto;
+    border: 21px solid rgba(59, 58, 60, .4);
+    border-radius: 5px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+  }
+  header a img:hover{
+    width:307px;
+  }
+  /* The text of the profile */
+  .profile-bio p{
+      font-size: 70%;
+      line-height: 2;
+      padding: 2%;
+      background: #fff;
+      border-radius: 5px;
+
+  }
+  .profile-bio{
+    margin-top:3%;
+    box-shadow: 0px 0px 59px #787878;
+  }
+  /* The social links */
+  .profile-social-links{
+    text-align: center;
+  }
+  .profile-social-links li{
+    display: inline-block;
+    margin-top: 1%;
+  }
+  .profile-social-links li a img{
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+  }
+  .profile-social-links li a img:hover{
+    -ms-transform: rotate(10deg); /* For  IE 9 */
+    -webkit-transform: rotate(10deg); /* For Chrome, Safari, Opera, just in case */
+    transform: rotate(10deg);
+  }
+   /* End of the social links */
+   /* If the viewport is more narrow than a PC or laptop, then apply the rules below */
+  @media all and (min-width : 0px) and (max-width : 1024px){
+    /* Don't center the content, but cover the screen with it */
+    aside{
+      margin:0;
+      width:98%;
+    }
+  }
+ 
+</style>
+<aside class="profile-card">
+  
+  <header>
+    
+    <!-- here’s the avatar -->
+    <a href="http://dyulgerova.info/images/stef.PNG">
+      <img src="http://dyulgerova.info/images/stef.PNG" />
+    </a>
+
+    <!-- the username -->
+    <h1>Stefany Dyulgerova</h1>
+    
+    <!-- and role or location -->
+    <h2>Web Programmer</h2>
+    
+  </header>
+  
+  <!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+    
+    <p>
+      I am a web programmer and I create websites and web applications. I adore programming and I want to do it 
+      my whole life. I know PHP, JavaScript, Perl, MySQL, WordPress, HTML5, CSS3 and much more. I am also an avid computer games player, especially Age of Empires! My portfolio is www.dyulgerova.info
+    </p>
+    
+  </div>
+  
+  <!-- some social links to show off -->
+  <ul class="profile-social-links">
+    
+    <!-- twitter - el clásico  -->
+    <li>
+      <a href="https://twitter.com/dyulgerovas">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
+      </a>
+    </li>
+    
+    <!-- envato – use this one to link to your marketplace profile -->
+    <li>
+      <a href="http://themeforest.net/user/Stefany93">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-envato.svg">
+      </a>
+    </li>
+    
+    <!-- codepen - your codepen profile-->
+    <li>
+      <a href="http://codepen.io/Stefany93/">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-codepen.svg">
+      </a>
+    </li>
+    
+    <!-- add or remove social profiles as you see fit -->
+    
+  </ul>
+  
+</aside>
+<!-- that’s all folks! -->
